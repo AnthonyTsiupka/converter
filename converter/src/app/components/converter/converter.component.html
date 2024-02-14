@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <form [formGroup]="converterForm">
+    <label for="amount">Amount:</label>
+    <input type="number" formControlName="amount" id="amount" />
+
+    <label for="fromCurrency">From Currency:</label>
+    <select formControlName="fromCurrency" id="fromCurrency">
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+    </select>
+
+    <label for="toCurrency">To Currency:</label>
+    <select formControlName="toCurrency" id="toCurrency">
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+    </select>
+
+    <p>Converted Amount: {{ convertedAmount }}</p>
+  </form>
+</div>

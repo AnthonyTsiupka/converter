@@ -1,0 +1,22 @@
+@import '../../sass/mixins'
+
+header
+  background-color: #f4f4f4
+  padding: 1rem
+  text-align: center
+  border-bottom: 1px solid #ddd
+  border-bottom-left-radius: .5rem
+  border-bottom-right-radius: .5rem
+  box-shadow: 0 2px 14px #0000001a, 0 7px 1.25rem #292d3809
+  display: flex
+  justify-content: space-around
+
+  @include s-screen
+    justify-content: start
+    flex-direction: column
+    gap: .5rem
+
+  h2
+    margin: 0
+    font-size: 1.5rem
+    color: #333

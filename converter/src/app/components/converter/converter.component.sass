@@ -1,0 +1,30 @@
+@import '../../sass/mixins'
+
+.wrapper
+
+form
+  max-width: 400px
+  margin: 1.25rem auto
+  padding: 1.25rem
+  border: 1px solid #ddd
+  border-radius: .5rem
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+
+  @include s-screen
+    margin: 2rem
+
+  label
+    display: block
+    margin-bottom: .5rem
+
+  input, select
+    width: 100%
+    padding: .5rem
+    margin-bottom: 1rem
+    border: 1px solid #ccc
+    border-radius: 4px
+
+  p
+    font-weight: bold
+    font-size: 1.5rem
+    margin-top: 1rem
